@@ -55,6 +55,17 @@ ADLS Gen2 Raw Layer          Databricks Serverless
 ---
 
 ## Key Features
+## Project Highlights
+
+- Built a parameter-driven Azure Data Factory ingestion framework for processing multiple SQL Server tables dynamically.
+- Implemented a reusable Lookup + ForEach pattern instead of creating separate pipelines for individual tables.
+- Implemented SQL Server → ADLS Gen2 → Databricks → Delta Lake data flow.
+- Stored the raw layer as Parquet files in ADLS Gen2.
+- Developed a reusable PySpark notebook driven by `tableName` and `folderName` parameters.
+- Implemented Databricks Serverless Job execution to avoid maintaining persistent compute.
+- Created reusable dynamic ADF datasets for source and sink configuration.
+- Integrated Azure Data Factory with GitHub for source control.
+- Maintained sanitized example configurations for documentation without exposing credentials.
 
 ### Dynamic Table Processing
 
@@ -138,6 +149,7 @@ The overall process is:
 ## Databricks Notebook
 
 The project uses a reusable PySpark notebook:
+[View the Databricks Bronze Load Notebook](databricks/notebooks/NB_Northwind_Bronze_Load.py)
 
 ```text
 databricks/
