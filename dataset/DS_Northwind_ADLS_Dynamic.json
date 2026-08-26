@@ -1,0 +1,29 @@
+{
+	"name": "DS_Northwind_ADLS_Dynamic",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Northwind_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat('raw/', dataset().folderName)",
+					"type": "Expression"
+				},
+				"fileSystem": "northwind"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

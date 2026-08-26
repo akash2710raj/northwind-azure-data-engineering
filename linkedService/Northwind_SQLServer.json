@@ -1,0 +1,21 @@
+{
+	"name": "Northwind_SQLServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "AKASH_PC",
+			"database": "Northwinds",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "northwind_adf",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiMjVmNGYyNS1iZmRjLTQxZTMtOGZiOS1mMjFhZWIzY2JlOWIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "NorthwindSelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"name": "NorthwindSelfHostedIR",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Self-hosted IR for local Northwind SQL Server"
+	}
+}
