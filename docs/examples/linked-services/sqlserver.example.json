@@ -1,0 +1,15 @@
+{
+  "name": "Northwind_SQLServer",
+  "description": "Example configuration only. Credentials are intentionally excluded.",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "type": "SqlServer",
+    "typeProperties": {
+      "server": "<SQL_SERVER_HOST>",
+      "database": "<DATABASE_NAME>",
+      "authenticationType": "SQL",
+      "userName": "<SQL_USERNAME>",
+      "password": "<MANAGED_SECRET>"
+    }
+  }
+}
