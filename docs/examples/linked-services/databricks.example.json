@@ -1,0 +1,12 @@
+{
+  "name": "Northwind_Databricks_Serverless",
+  "description": "Example configuration only. Authentication credentials are intentionally excluded.",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "type": "AzureDatabricks",
+    "typeProperties": {
+      "domain": "https://<DATABRICKS_WORKSPACE_URL>",
+      "authentication": "AccessToken"
+    }
+  }
+}
