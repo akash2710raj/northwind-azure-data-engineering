@@ -7,7 +7,9 @@ An end-to-end data engineering project built using Azure Data Factory, Azure Dat
 The solution extracts data from a SQL Server Northwind database, dynamically ingests multiple tables into Azure Data Lake Storage Gen2 as Parquet files, and loads the data into Delta Bronze tables using Databricks.
 
 The architecture is parameter-driven and reusable, allowing multiple source tables to be processed without creating a separate pipeline for every table.
+## Architecture
 
+![Northwind Azure Data Engineering Architecture](architecture/architecture.png)
 ---
 
 ## Architecture
