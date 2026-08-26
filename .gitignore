@@ -1,0 +1,38 @@
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+secrets.json
+credentials.json
+
+# Azure / Databricks local configuration
+.databricks/
+.databricks-connect/
+*.token
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.temp
