@@ -1,0 +1,11 @@
+{
+  "name": "Northwind_ADLS",
+  "description": "Example configuration only. Environment-specific values are intentionally excluded.",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "type": "AzureBlobFS",
+    "typeProperties": {
+      "url": "https://<STORAGE_ACCOUNT>.dfs.core.windows.net/"
+    }
+  }
+}
